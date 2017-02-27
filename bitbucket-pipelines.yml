@@ -1,0 +1,10 @@
+image: texlive/texlive:2016
+
+pipelines:
+  default:
+    - step:
+        script:
+          - latex test.tex
+          - pdflatex test.tex
+          - xelatex test.tex
+          - lualatex test.tex

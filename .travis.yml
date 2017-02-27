@@ -1,0 +1,4 @@
+language: generic
+sudo: required
+services: docker
+script: docker run -v ${TRAVIS_BUILD_DIR}:/travis -it texlive/texlive:2016 /bin/bash -c "cd /travis && latex test.tex && pdflatex test.tex && xelatex test.tex && lualatex test.tex"
