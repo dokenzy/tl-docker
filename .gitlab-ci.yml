@@ -1,0 +1,8 @@
+image: texlive/texlive:2016
+
+test:
+    script:
+    - latex test.tex
+    - pdflatex test.tex
+    - xelatex test.tex
+    - lualatex test.tex
