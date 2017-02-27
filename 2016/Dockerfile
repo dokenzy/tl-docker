@@ -9,4 +9,5 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/* \
   && wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz \
   && tar xzvf install-tl-unx.tar.gz \
-  && ./install-tl-*/install-tl -profile texlive.profile
+  && ./install-tl-*/install-tl -profile texlive.profile \
+  && rm -rf install-tl-*
