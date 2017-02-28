@@ -10,4 +10,5 @@ RUN apt-get update \
   && wget ftp://tug.org/historic/systems/texlive/2015/install-tl-unx.tar.gz \
   && tar xzvf install-tl-unx.tar.gz \
   && ./install-tl-*/install-tl -profile texlive.profile \
+  -repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final \
   && rm -rf install-tl-*
